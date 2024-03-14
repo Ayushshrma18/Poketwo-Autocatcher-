@@ -237,7 +237,7 @@ client.on('messageCreate', async message => {
                             const name5 = name1.replace(/Q/g, 'R');
                             const name = findOutput(name5);
 
-                            const delay = Math.floor(Math.random() * 6 + 5) * 1000; //interval from 5-10seconds
+                            const delay = Math.floor(Math.random() * 6 + 5) * 500; //interval from 5-10seconds
                             console.log("A Pokemon Spawned, Catching in " + (delay / 1000) + "seconds")
                             setTimeout(async () => {
                                 message.channel.send(`<@716390085896962058> c ${name}`)
